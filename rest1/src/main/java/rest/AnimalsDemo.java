@@ -33,7 +33,6 @@ public class AnimalsDemo {
         //TODO return proper representation object
      return "Vuf… (Message from a dog)";   
     }
-
     /**
      * PUT method for updating or creating an instance of AnimalsDemo
      * @param content representation for the resource
@@ -42,4 +41,19 @@ public class AnimalsDemo {
     @Consumes(MediaType.APPLICATION_JSON)
     public void putJson(String content) {
     }
+ /**   
+    @Path("/animal_list")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+     public String getJson2() {
+        //TODO return proper representation object
+        return "[\"Dog\", \"Cat\", \"Mouse\", \"Bird\"]";
+    }
+      @PUT
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void putJson2(String content) {
+    }
+    
+*/
+    
 }
