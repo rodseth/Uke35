@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package rest;
 
 import javax.ws.rs.core.Context;
@@ -14,11 +10,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PUT;
 import javax.ws.rs.core.MediaType;
 
-/**
- * REST Web Service
- *
- * @author MariHaugen
- */
+
 @Path("animals")
 public class AnimalsDemo {
 
@@ -36,10 +28,10 @@ public class AnimalsDemo {
      * @return an instance of java.lang.String
      */
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
     public String getJson() {
         //TODO return proper representation object
-        throw new UnsupportedOperationException();
+     return "Vuf… (Message from a dog)";   
     }
 
     /**
